@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Intelligence Workspace</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <!-- <link rel="stylesheet" href="../static/css/result.css" /> -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/result.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <i class="fas fa-file-pdf"></i>
+        <h2>Doc Intelligence</h2>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-label">Analysis</div>
+        <a onclick="switchTab('text')" data-tab="text">
+          <i class="fas fa-file-lines"></i>
+          <span>Extracted Text</span>
+        </a>
+        <a onclick="switchTab('chat')" data-tab="chat">
+          <i class="fas fa-comment-dots"></i>
+          <span>Q&A Chat</span>
+        </a>
+        <a onclick="switchTab('summary')" data-tab="summary">
+          <i class="fas fa-align-left"></i>
+          <span>Summary</span>
+        </a>
+        <a onclick="switchTab('mindmap')" data-tab="mindmap">
+          <i class="fas fa-diagram-project"></i>
+          <span>Mind Map</span>
+        </a>
+      </div>
+
+      <div class="theme-toggle">
+        <a onclick="toggleTheme()">
+          <i class="fas fa-moon"></i>
+          <span>Toggle Theme</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- LEFT PDF VIEW -->
+      <div class="pdf-panel">
+        <div class="pdf-controls">
+          <button onclick="prevPage()" id="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+            Previous
+          </button>
+          <span id="pageInfo">Page 1 of 1</span>
+          <button onclick="nextPage()" id="nextBtn">
+            Next
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="pdf-viewer">
+          <canvas id="pdfCanvas"></canvas>
+        </div>
+      </div>
+
+      <!-- RIGHT WORKSPACE -->
+      <div class="workspace">
+        <div class="tabs">
+          <button
+            class="tab active"
+            data-panel="text"
+            onclick="switchTab('text')"
+          >
+            <i class="fas fa-file-lines"></i> Text
+          </button>
+          <button class="tab" data-panel="chat" onclick="switchTab('chat')">
+            <i class="fas fa-comment-dots"></i> Chat
+          </button>
+          <button
+            class="tab"
+            data-panel="summary"
+            onclick="switchTab('summary')"
+          >
+            <i class="fas fa-align-left"></i> Summary
+          </button>
+          <button
+            class="tab"
+            data-panel="mindmap"
+            onclick="switchTab('mindmap')"
+          >
+            <i class="fas fa-diagram-project"></i> Mind Map
+          </button>
+        </div>
+
+        <div class="panel-container">
+          <!-- TEXT PANEL -->
+          <div id="panel-text" class="panel active">
+            <pre id="doc_text">{{ extracted_text }}</pre>
+          </div>
+
+          <!-- CHAT PANEL -->
+          <div id="panel-chat" class="panel">
+            <div class="chat-box" id="chatBox">
+              <div class="empty-state">
+                <i class="fas fa-comments"></i>
+                <p><strong>Ask questions about your document</strong></p>
+                <p>Type a question below to get started</p>
+              </div>
+            </div>
+            <div class="chat-input">
+              <input
+                id="chatInput"
+                placeholder="Ask anything about this document..."
+              />
+              <button onclick="sendChat()">
+                <i class="fas fa-paper-plane"></i>
+                Send
+              </button>
+            </div>
+          </div>
+
+          <!-- SUMMARY -->
+          <div id="panel-summary" class="panel">
+            <button class="btn" onclick="generateSummary()">
+              <i class="fas fa-magic"></i>
+              Generate Summary
+            </button>
+            <div id="summaryOutput" class="shimmer" style="display: none"></div>
+            <pre id="summaryBox"></pre>
+          </div>
+
+          <!-- MINDMAP -->
+          <div id="panel-mindmap" class="panel">
+            <button class="btn" onclick="generateMindmap()">
+              <i class="fas fa-diagram-project"></i>
+              Generate Mind Map
+            </button>
+            <div
+              id="mindmap_loading"
+              class="shimmer"
+              style="display: none"
+            ></div>
+            <pre id="mindmap_code"></pre>
+            <div id="mindmap_preview"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.PDF_URL = "/uploads/{{ filename }}";
+    </script>
+
+    <script src="{{ url_for('static', filename='js/tabs.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/summary.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/mindmap.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/pdf_viewer.js') }}"></script>
+  </body>
+</html>

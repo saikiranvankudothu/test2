@@ -1,0 +1,133 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "Abstract",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 8744986022950449516,
+    "filename": "Abstract.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.024,
+            "t": 763.7080439453125,
+            "r": 508.68,
+            "b": 743.5210439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "Multimodal Document Intelligence System",
+      "text": "Multimodal Document Intelligence System",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 264.17,
+            "t": 727.3660439453125,
+            "r": 331.094,
+            "b": 712.2260439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Abstract",
+      "text": "Abstract",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.024,
+            "t": 698.8960439453125,
+            "r": 526.384,
+            "b": 494.97404394531253,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1279
+          ]
+        }
+      ],
+      "orig": "This project proposes an end-to-end Document Intelligence system that converts unstructured, multimodal documents-such as scanned pages, PDFs, and handwritten notes-into actionable insights and structured visual representations. At its core is a novel graph-oriented transformer decoder that learns to identify and sequence process steps from document embeddings, then emits node-edge tokens which are rendered as flowcharts. The pipeline begins with OCR and layout analysis (using a vision-language model) to segment and embed text blocks, followed by a retrieval-augmented module for optional question answering and summarization. We will curate a diverse corpus of procedural documents (legal contracts, technical manuals, SOPs, academic protocols) and introduce realistic OCR noise augmentations to improve robustness. Performance will be evaluated on a held-out test set via graph edit distance and node/edge precision-recall, and through a small expert user study to assess clarity and time savings. By unifying  process  extraction,  visualization,  and  interactive  query  capabilities  in  one  learned framework-and by open-sourcing all code and data-this work aims to advance the state of the art in multimodal document understanding and automated diagram generation.",
+      "text": "This project proposes an end-to-end Document Intelligence system that converts unstructured, multimodal documents-such as scanned pages, PDFs, and handwritten notes-into actionable insights and structured visual representations. At its core is a novel graph-oriented transformer decoder that learns to identify and sequence process steps from document embeddings, then emits node-edge tokens which are rendered as flowcharts. The pipeline begins with OCR and layout analysis (using a vision-language model) to segment and embed text blocks, followed by a retrieval-augmented module for optional question answering and summarization. We will curate a diverse corpus of procedural documents (legal contracts, technical manuals, SOPs, academic protocols) and introduce realistic OCR noise augmentations to improve robustness. Performance will be evaluated on a held-out test set via graph edit distance and node/edge precision-recall, and through a small expert user study to assess clarity and time savings. By unifying  process  extraction,  visualization,  and  interactive  query  capabilities  in  one  learned framework-and by open-sourcing all code and data-this work aims to advance the state of the art in multimodal document understanding and automated diagram generation."
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.3200073242188,
+        "height": 841.9200439453125
+      },
+      "page_no": 1
+    }
+  }
+}

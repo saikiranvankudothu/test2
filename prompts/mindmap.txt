@@ -1,0 +1,19 @@
+You MUST generate a valid Mermaid mindmap using Mermaid v11 syntax.
+
+STRICT RULES:
+- NO colons (:)
+- NO quotes
+- NO backticks
+- NO markdown
+- NO explanations
+- Output ONLY Mermaid code
+
+Required structure:
+mindmap
+  Root
+    Topic
+      Subtopic
+
+Convert the following document into a mind map:
+
+{text}

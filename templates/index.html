@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Document – Document Intelligence System</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <h2>📄 Document Intelligence</h2>
+      <i class="fas fa-moon toggle-btn" onclick="toggleTheme()"></i>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="upload-card">
+        <h2>Upload a PDF Document</h2>
+        <p>Extract text • Summarize • Ask questions • Generate mind maps</p>
+
+        <form action="/process" method="post" enctype="multipart/form-data">
+          <label class="upload-label">
+            <i class="fas fa-upload"></i> Choose PDF File
+            <input
+              type="file"
+              name="pdf"
+              id="pdfInput"
+              accept=".pdf"
+              required
+            />
+          </label>
+
+          <p id="fileName" class="preview-text"></p>
+
+          <button type="submit">Process Document</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- SHARED JS (Theme logic) -->
+    <script src="{{ url_for('static', filename='js/tabs.js') }}"></script>
+
+    <!-- PAGE-SPECIFIC JS -->
+    <script>
+      document
+        .getElementById("pdfInput")
+        .addEventListener("change", function () {
+          const file = this.files[0];
+          document.getElementById("fileName").textContent = file
+            ? file.name
+            : "";
+        });
+    </script>
+  </body>
+</html>
