@@ -1,0 +1,749 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "RAG testing typically refers to Red",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 16913393818906749886,
+    "filename": "RAG testing typically refers to Red.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/groups/4"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.024,
+            "t": 767.7600439453125,
+            "r": 512.056,
+            "b": 713.2600439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            377
+          ]
+        }
+      ],
+      "orig": "RAG testing typically refers to Red, Amber, Green testing, which is a system used to categorize or evaluate the status of something. In software development, project management, or even performance reviews, it's often used as a visual system to indicate the health or progress of a task. Here's some text that you could use to explain or incorporate into a RAG testing context:",
+      "text": "RAG testing typically refers to Red, Amber, Green testing, which is a system used to categorize or evaluate the status of something. In software development, project management, or even performance reviews, it's often used as a visual system to indicate the health or progress of a task. Here's some text that you could use to explain or incorporate into a RAG testing context:"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.024,
+            "t": 679.3000439453125,
+            "r": 172.245,
+            "b": 668.2600439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "RAG Testing Overview",
+      "text": "RAG Testing Overview",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.024,
+            "t": 656.7400439453126,
+            "r": 510.964,
+            "b": 616.7800439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            256
+          ]
+        }
+      ],
+      "orig": "RAG Testing is a visual project management tool used to assess and monitor the progress of tasks, projects, or systems. It utilizes a color-coded system to quickly convey the status of different components or stages of a process. The three colors used are:",
+      "text": "RAG Testing is a visual project management tool used to assess and monitor the progress of tasks, projects, or systems. It utilizes a color-coded system to quickly convey the status of different components or stages of a process. The three colors used are:"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 605.3800439453125,
+            "r": 323.853,
+            "b": 594.3400439453126,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "\u00b7 Red : Critical Issue / Needs Immediate Attention",
+      "text": "\u00b7 Red : Critical Issue / Needs Immediate Attention",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 126.02,
+            "t": 582.7900439453125,
+            "r": 515.339,
+            "b": 557.2300439453126,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            140
+          ]
+        }
+      ],
+      "orig": "o Indicates a problem that could jeopardize the project's success or the performance of the system. Immediate corrective action is required.",
+      "text": "o Indicates a problem that could jeopardize the project's success or the performance of the system. Immediate corrective action is required.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 126.02,
+            "t": 545.8300439453126,
+            "r": 516.289,
+            "b": 520.2700439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            107
+          ]
+        }
+      ],
+      "orig": "o Example: A system feature is not working, blocking further development or causing major issues for users.",
+      "text": "o Example: A system feature is not working, blocking further development or causing major issues for users.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 508.87004394531255,
+            "r": 331.477,
+            "b": 497.8300439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "\u00b7 Amber (Yellow) : Warning / Needs Attention Soon",
+      "text": "\u00b7 Amber (Yellow) : Warning / Needs Attention Soon",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 126.02,
+            "t": 486.31004394531254,
+            "r": 522.008,
+            "b": 446.35004394531256,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            181
+          ]
+        }
+      ],
+      "orig": "o Shows a situation that may not be urgent but requires attention before it worsens. It signals potential risks or issues that should be resolved to avoid future delays or problems.",
+      "text": "o Shows a situation that may not be urgent but requires attention before it worsens. It signals potential risks or issues that should be resolved to avoid future delays or problems.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 126.02,
+            "t": 434.8300439453125,
+            "r": 518.773,
+            "b": 409.3900439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            112
+          ]
+        }
+      ],
+      "orig": "o Example: A project task is slightly behind schedule, but corrective measures can still bring it back on track.",
+      "text": "o Example: A project task is slightly behind schedule, but corrective measures can still bring it back on track.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 397.85004394531256,
+            "r": 233.829,
+            "b": 386.81004394531254,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "\u00b7 Green : On Track / No Issues",
+      "text": "\u00b7 Green : On Track / No Issues",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 126.02,
+            "t": 375.41004394531257,
+            "r": 494.926,
+            "b": 349.85004394531256,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            130
+          ]
+        }
+      ],
+      "orig": "o Indicates that everything is proceeding as planned, with no major problems or delays. The project or system is running smoothly.",
+      "text": "o Indicates that everything is proceeding as planned, with no major problems or delays. The project or system is running smoothly.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 126.02,
+            "t": 338.45004394531253,
+            "r": 480.497,
+            "b": 312.8900439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "o Example: All tasks are completed as scheduled, and there are no significant obstacles.",
+      "text": "o Example: All tasks are completed as scheduled, and there are no significant obstacles.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.024,
+            "t": 301.37004394531255,
+            "r": 174.188,
+            "b": 290.3300439453126,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Why Use RAG Testing?",
+      "text": "Why Use RAG Testing?",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 278.9300439453125,
+            "r": 516.05,
+            "b": 253.37004394531255,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "1. Clear Visibility : The color-coding system makes it easy to spot potential issues or areas that require attention.",
+      "text": "Clear Visibility : The color-coding system makes it easy to spot potential issues or areas that require attention.",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 241.97004394531257,
+            "r": 522.67,
+            "b": 216.38004394531254,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            141
+          ]
+        }
+      ],
+      "orig": "2. Quick Decision-Making : With RAG status indicators, teams or managers can prioritize efforts on red or amber areas, ensuring swift action.",
+      "text": "Quick Decision-Making : With RAG status indicators, teams or managers can prioritize efforts on red or amber areas, ensuring swift action.",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 204.98004394531256,
+            "r": 518.277,
+            "b": 179.4200439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            167
+          ]
+        }
+      ],
+      "orig": "3. Transparency : The color system provides transparency to all stakeholders about the current state of a project or system, promoting communication and collaboration.",
+      "text": "Transparency : The color system provides transparency to all stakeholders about the current state of a project or system, promoting communication and collaboration.",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.024,
+            "t": 167.90004394531252,
+            "r": 233.539,
+            "b": 156.86004394531255,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "How to Use RAG Testing Effectively:",
+      "text": "How to Use RAG Testing Effectively:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 145.46004394531258,
+            "r": 525.495,
+            "b": 119.90004394531252,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "\u00b7 Set Clear Criteria : Define what constitutes Red, Amber, or Green for each task or component. Without clear guidelines, the system can become subjective.",
+      "text": "Set Clear Criteria : Define what constitutes Red, Amber, or Green for each task or component. Without clear guidelines, the system can become subjective.",
+      "enumerated": false,
+      "marker": "\u00b7"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 108.50004394531254,
+            "r": 504.903,
+            "b": 82.9440439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            142
+          ]
+        }
+      ],
+      "orig": "\u00b7 Update Regularly : Ensure the RAG status is updated frequently, especially in fast-moving projects, to reflect the most current information.",
+      "text": "Update Regularly : Ensure the RAG status is updated frequently, especially in fast-moving projects, to reflect the most current information.",
+      "enumerated": false,
+      "marker": "\u00b7"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 90.024,
+            "t": 767.7600439453125,
+            "r": 508.968,
+            "b": 742.1800439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            180
+          ]
+        }
+      ],
+      "orig": "\u00b7 Focus on Red and Amber : When the status is Red or Amber, these are the areas requiring attention. Plan follow-up actions or contingencies to address issues before they escalate.",
+      "text": "Focus on Red and Amber : When the status is Red or Amber, these are the areas requiring attention. Plan follow-up actions or contingencies to address issues before they escalate.",
+      "enumerated": false,
+      "marker": "\u00b7"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.3200073242188,
+        "height": 841.9200439453125
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.3200073242188,
+        "height": 841.9200439453125
+      },
+      "page_no": 2
+    }
+  }
+}

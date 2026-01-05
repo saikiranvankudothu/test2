@@ -68,9 +68,16 @@ class LLMService:
             max_tokens=150,
             temperature=0.0
         )
+        print("----- VERIFY PROMPT OUTPUT -----")
+        print(result)
+        print("--------------------------------")
 
-        if "SUPPORTED" in result and "NOT SUPPORTED" not in result:
+        result = result.strip().upper()
+
+        if result == "SUPPORTED":
             return True
 
         return False
+
+
 
